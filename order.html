@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+	 integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="Coffee.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script> 
+    <h1>ORDER HERE</h1>
+
+    <!-- Order Menu -->
+<div class="container">
+	<form id="order-div">
+		<div id="dropdowns">
+			<!-- Coffe Selections -->
+			<h1 id="drinks"> Coffee</h1> 
+				<select>
+				<option value="" disabled selected> Coffee </option>
+				<option value="Hot Brew"> Hot Brew </option>
+				<option value="Iced Coffe"> Iced Coffee </option>
+				<option value="Cold Brew"> Cold Brew </option>
+				<option value="Brew Dujour"> Brew Dujour </option>
+			</select>
+			<select>
+				<option value="" disabled selected> Coffee Flavors </option>
+				<option value="French Vanilla"> French Vanilla </option>
+				<option value="Caramel"> Caramel </option>
+				<option value="Vanilla Bean"> Vanilla Bean </option>
+				<option value="Pecan"> Pecan </option>
+				<option value="Hazelnut"> Hazelnut </option>
+				<option value="Blueberry"> Blueberry </option>
+			</select>
+			<!-- End Coffe Selections -->		
+			<br>
+			<!-- Tea Selections -->
+			<h1 id="drinks"> Tea</h1>	
+			<select>
+				<option value="" disabled selected> Tea </option>
+				<option value="Hot Tea"> Hot Tea </option>
+				<option value="Iced Tea"> Iced Tea </option>
+				<option value="Tea Dujour"> Tea Dujour </option>
+			</select>
+			<select>
+				<option value="" disabled selected> Tea Flavors </option>
+				<option value="Green"> Green </option>
+				<option value="Black"> Black </option>
+				<option value="Matcha"> Matcha </option>
+				<option value="White"> White </option>
+				<option value="Yellow"> Yellow </option>
+				<option value="Acai"> Acai </option>
+				<option value="Blackberry"> Blackberry </option>
+			</select>
+			<!-- End Tea Selections -->
+				<br>
+				<!-- Food -->
+				<h1 id="food"> Food </h1>
+			<select>
+				<option value="" disabled selected> Pastries </option>
+				<option value="Croissant"> Croissant </option>
+				<option value="Chocolate"> Chocolate Pastries </option>
+				<option value="Macaroon Dujour"> Macaroon Dujour </option>
+				<option value="Doughnut"> Doughnut </option>
+				<option value="Scones"> Scones </option>
+				<option value="Muffin Dujour"> Muffin Dujour </option>
+			</select>
+			<select>
+				<option value="" disabled selected> Sandwhiches </option>
+				<option value="Ham"> Ham Egg and Cheese Croissant</option>
+				<option value="Sausage"> Sausage Egg and Cheese Muffin </option>
+				<option value="Quiche"> Breakfast Quiche </option>
+				<option value="Baccon"> Baccon Egg Grilled Cheese </option>
+				<option value="Chorizo"> Chorizo Egg and Cheese Burrito </option>
+			</select>
+			<!-- End Food -->
+
+			<!-- Build your own sandwhich -->
+				<br>
+				<h1 id="food"> Build Your Own Sandwhich </h1>
+			<select>
+				<option value="" disabled selected> Breads </option>
+				<option value="Muffin"> Muffin </option>
+				<option value="Bagel"> Bagel </option>
+				<option value="Custom Croissant"> Croissant </option>
+				<option value="Flat Bread"> Flat Bread </option>
+				<option value="NoneBread"> Naked </option>
+			</select>
+				<br>
+			<select>
+				<option value="" disabled selected> Meats </option>
+				<option value="Ham"> Ham </option>
+				<option value="Bacon"> Bacon </option>
+				<option value="Custom Sausage"> Sausage</option>
+				<option value="NoneMeat"> No Meat </option>
+			</select>
+				<br>
+			<select>
+				<option value="" disabled selected> Cheeses </option>
+				<option value="American"> American </option>
+				<option value="Swiss"> Swiss </option>
+				<option value="Pepperjack"> Pepperjack </option>
+				<option value="NoneCheese"> No Cheese </option>
+			</select>
+				<br>
+			<select>
+				<option value="" disabled selected> Egg </option>
+				<option value="OverEasy"> Over Easy </option>
+				<option value="Scrambled"> Scrambled </option>
+				<option value="Egg White"> Egg White </option>
+				<option value="NoneEgg"> No Egg </option>
+			</select>
+				<br>
+				<h4> Order Notes </h4>
+			<textarea rows="5" cols="60"></textarea>
+				<br>
+		</form>
+
+    </div>
+</div>
+<!-- validation and form-->
+<form class="row g-3" action = "Thanks.html">
+	<div class="col-md-4">
+	  <label for="validationDefault01" class="form-label">First name</label>
+	  <input type="text" class="form-control" id="validationDefault01" value="" required>
+	</div>
+	<div class="col-md-4">
+	  <label for="validationDefault02" class="form-label">Last name</label>
+	  <input type="text" class="form-control" id="validationDefault02" value="" required>
+	</div>
+	
+	<div class="col-md-3">
+	  <label for="validationDefault05" class="form-label">Zip</label>
+	  <input type="text" class="form-control" id="validationDefault05" required>
+	</div>
+	<div class="col-md-12">
+	  <div class="form-check">
+		<input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+		<label class="form-check-label" for="invalidCheck2">
+		  Agree to terms and conditions
+		</label>
+	  </div>
+	</div>
+	<div class="col-12">
+	  <button class="btn btn-primary" type="submit">Submit form</button>
+	</div>
+	
+  </form>
+
+	<script src = "jscript.js"></script>
+</body>
+</html>
