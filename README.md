@@ -5,3 +5,5 @@ The about page is the landing page or the first page a user would see. The about
 promotion of some of the drinks items. 
 The website was built using the HTML, CSS, and javascript as required by the project required.
 ## Detailed project outline is attached below
+
+![](![](https://github.com/kdhital14/SBAHTMLCSSJS/blob/main/images/coffeeshop.jpg)
